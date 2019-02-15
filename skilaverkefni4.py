@@ -36,33 +36,40 @@ print("Binary",binaryLeit(listi,6))
 
 # 5.
 def insertRett(listi,tala):
+    if len(listi) == 0 or tala >= listi[len(listi)-1]:
+        listi.append(tala)
+        return listi
     midja = len(listi)//2
     if listi[midja] >= tala:
         for x in range(midja+1):
             if listi[x] >= tala:
+                if (x == midja+1):
+                    listi.append(tala)
                 nyr = listi[0:x]
                 nyr.append(tala)
-                print("nýr",nyr)
+                if (x == midja+1):
+                    return nyr
                 for x in listi[x:len(listi)]:
                     nyr.append(x)
                 return nyr
-    re = listi[0:midja+1] + insertRett(listi[midja+1:len(listi)],tala)
-    return re
+    return listi[0:midja+1] + insertRett(listi[midja+1:len(listi)],tala)
+
+listi = []
+listi = insertRett(listi,3)
+print("Very nice3\t",listi)
 
 listi = [2,5,9,12,16,18,22,23]
-
 print("listi\t\t",listi)
 listi = insertRett(listi,3)
-print("Very nice\t",listi)
+print("Very nice3\t",listi)
 listi = insertRett(listi,19)
-print("Very nice\t",listi)
+print("Very nice19\t",listi)
 listi = insertRett(listi,19)
-print("Very nice\t",listi)
-listi = insertRett(listi,24)
-print("Very nice\t",listi)
-
-# Lok lista
-# Sama talan og er í listanumö
+print("Very nice19\t",listi)
+listi = insertRett(listi,26)
+print("Very nice26\t",listi)
+listi = insertRett(listi,1)
+print("Very nice1\t",listi)
 
 # tré
 #           5
