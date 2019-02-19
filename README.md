@@ -9,5 +9,5 @@
 * ### Dæmi 4
     * #### a ) linear search er með O(n) þar sem í versta falli þá ferð það í gegnum allt, ein lykkja
     * #### b ) binary search er með O(log(n)) þar sem það fer ekki í gegnum öll gögnin útaf því í hvert skipti þá er skipt gögnunum í tvennt og þá er oft sleppt að þurfa að fara í gegnum hlut af þeim þar sem það er 50% líkur að það sé í fyrri hvert skipti.
-* ### [Dæmi 5](https://github.com/MattiMatt8/Reiknirit_v4/blob/master/skilaverkefni4.py#L38)
-* ### [Dæmi 6](https://github.com/MattiMatt8/Reiknirit_v4/blob/master/skilaverkefni4.py#L77)
+* ### [Dæmi 5](https://github.com/MattiMatt8/Reiknirit_v4/blob/master/skilaverkefni4.py#L43)
+* ### [Dæmi 6](https://github.com/MattiMatt8/Reiknirit_v4/blob/master/skilaverkefni4.py#L79)
