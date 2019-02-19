@@ -17,6 +17,8 @@ print("\n--------- Dæmi 3 ---------\n")
 def binaryLeit(listi,finna):
     midja = len(listi)//2
     if midja == 0:
+        if listi[midja] == finna:
+            return midja
         return -1
     if listi[midja] == finna:
         return midja
@@ -31,9 +33,12 @@ def binaryLeit(listi,finna):
 
 
 
-listi = [1,2,3,5,6,7,8,9]
+listi = [1,2,3,5,6,7,8,9,10]
 print("Binary staða 10:",binaryLeit(listi,10))
+print("Binary staða 11:",binaryLeit(listi,11))
+print("Binary staða 9:",binaryLeit(listi,9))
 print("Binary staða 6:",binaryLeit(listi,6))
+print("Binary staða 1:",binaryLeit(listi,1))
 
 # 5.
 print("\n--------- Dæmi 5 ---------\n")
@@ -58,9 +63,6 @@ def insertRett(listi,tala):
 
 listi = []
 listi = insertRett(listi,3)
-print("Listinn\t",listi)
-
-listi = [2,5,9,12,16,18,22,23]
 print("Listinn\t",listi)
 listi = insertRett(listi,3)
 print("Listinn\t",listi)
