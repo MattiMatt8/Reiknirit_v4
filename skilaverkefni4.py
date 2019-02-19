@@ -8,8 +8,8 @@ def linearLeit(listi,finna):
             return x
     return -1
 listi = [8,5,3,7,1,9,2,6]
-print("Staða 1: ",linearLeit(listi,4))
-print("Staða 1: ",linearLeit(listi,2))
+print("Staða 4: ",linearLeit(listi,4))
+print("Staða 2: ",linearLeit(listi,2))
 
 
 # 3.
@@ -32,8 +32,8 @@ def binaryLeit(listi,finna):
 
 
 listi = [1,2,3,5,6,7,8,9]
-print("Binary",binaryLeit(listi,10))
-print("Binary",binaryLeit(listi,6))
+print("Binary staða 10:",binaryLeit(listi,10))
+print("Binary staða 6:",binaryLeit(listi,6))
 
 # 5.
 print("\n--------- Dæmi 5 ---------\n")
@@ -58,20 +58,20 @@ def insertRett(listi,tala):
 
 listi = []
 listi = insertRett(listi,3)
-print("Very nice3\t",listi)
+print("Listinn\t",listi)
 
 listi = [2,5,9,12,16,18,22,23]
-print("listi\t\t",listi)
+print("Listinn\t",listi)
 listi = insertRett(listi,3)
-print("Very nice3\t",listi)
+print("Listinn\t",listi)
 listi = insertRett(listi,19)
-print("Very nice19\t",listi)
+print("Listinn\t",listi)
 listi = insertRett(listi,19)
-print("Very nice19\t",listi)
+print("Listinn\t",listi)
 listi = insertRett(listi,26)
-print("Very nice26\t",listi)
+print("Listinn\t",listi)
 listi = insertRett(listi,1)
-print("Very nice1\t",listi)
+print("Listinn\t",listi)
 
 
 # 6
