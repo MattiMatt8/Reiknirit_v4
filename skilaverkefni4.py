@@ -97,7 +97,7 @@ class Node:
                 return self.right.insert(v)
             else:
                 self.right = Node(v)
-                return
+                return True
     def finna(self,data):
         if self.value and self.value == data:
             return True
