@@ -9,7 +9,9 @@
 * ### [Dæmi 2](https://github.com/MattiMatt8/Reiknirit_v4/blob/master/skilaverkefni4.py#L3)
 * ### [Dæmi 3](https://github.com/MattiMatt8/Reiknirit_v4/blob/master/skilaverkefni4.py#L15)
 * ### Dæmi 4
-    * #### a ) Linear search er með O(n) þar sem í versta falli þá fer það í gegnum allt, ein lykkja.
-    * #### b ) Binary search er með O(log(n)) þar sem það fer ekki í gegnum öll gögnin útaf því í hvert skipti þá er skipt gögnunum í tvennt og þá er oft sleppt að fara í gegnum hluta af þeim þar sem það er 50% líkur að það sé í fyrri hlutanum í hvert skipti.
+    * #### a ) 
+        * Linear search er með O(n) þar sem í versta falli þá fer það í gegnum allt, ein lykkja.
+    * #### b ) 
+        * Binary search er með O(log(n)) þar sem það fer ekki í gegnum öll gögnin útaf því í hvert skipti þá er skipt gögnunum í tvennt og þá er oft sleppt að fara í gegnum hluta af þeim þar sem það er 50% líkur að það sé í fyrri hlutanum í hvert skipti.
 * ### [Dæmi 5](https://github.com/MattiMatt8/Reiknirit_v4/blob/master/skilaverkefni4.py#L43)
 * ### [Dæmi 6](https://github.com/MattiMatt8/Reiknirit_v4/blob/master/skilaverkefni4.py#L79)
