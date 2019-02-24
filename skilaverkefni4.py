@@ -97,7 +97,16 @@ class Node:
                 return self.right.insert(v)
             else:
                 self.right = Node(v)
+                return
+    def finna(self,data):
+        if self.value and self.value == data:
+            return True
+        if self.left:
+            if self.left.finna(data):
                 return True
+        if self.right:
+            return self.right.finna(data)
+        return False
 class Tree:
     def __init__(self):
         self.root = None
@@ -107,20 +116,10 @@ class Tree:
         else:
             self.root = Node(v)
             return True
-
-def finna(tre,data):
-    if tre.root:
-        return finnaN(tre.root,data)
-    return False
-def finnaN(root,data):
-    if root.value and root.value == data:
-        return True
-    if root.left:
-        if finnaN(root.left,data):
-            return True
-    if root.right:
-        return finnaN(root.right,data)
-    return False
+    def finna(self,data):
+        if self.root:
+            return self.root.finna(data)
+        return False
 print("\n------ Tré 1 ------\n")
 t = Tree()
 print("Insert 7:",t.insert(7))
@@ -134,26 +133,26 @@ print("Insert 9:",t.insert(9))
 print("Insert 1:",t.insert(1))
 print("Insert 2:",t.insert(2))
 print()
-print("Finnst 7: ",finna(t,7))
-print("Finnst 3: ",finna(t,3))
-print("Finnst 1: ",finna(t,1))
-print("Finnst 2: ",finna(t,2))
-print("Finnst 6: ",finna(t,6))
-print("Finnst 5: ",finna(t,5))
-print("Finnst 8: ",finna(t,8))
-print("Finnst 9: ",finna(t,9))
-print("Finnst 10: ",finna(t,10))
+print("Finnst 7: ",t.finna(7))
+print("Finnst 3: ",t.finna(3))
+print("Finnst 1: ",t.finna(1))
+print("Finnst 2: ",t.finna(2))
+print("Finnst 6: ",t.finna(6))
+print("Finnst 5: ",t.finna(5))
+print("Finnst 8: ",t.finna(8))
+print("Finnst 9: ",t.finna(9))
+print("Finnst 10: ",t.finna(10))
 print()
-print("Finnst 0: ",finna(t,0))
-print("Finnst 12: ",finna(t,12))
-print("Finnst 4: ",finna(t,4))
+print("Finnst 0: ",t.finna(0))
+print("Finnst 12: ",t.finna(12))
+print("Finnst 4: ",t.finna(4))
 print()
-print("Finnst: ",finna(t,7))
+print("Finnst: ",t.finna(7))
 
 
 t2 = Tree()
 print()
 print("\n------ Tré 2 ------\n")
-print("Finnst 7: ",finna(t2,7))
+print("Finnst 7: ",t2.finna(7))
 
 print("\n-------------------\n")
